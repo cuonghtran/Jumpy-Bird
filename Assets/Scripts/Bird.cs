@@ -29,8 +29,7 @@ public class Bird : MonoBehaviour
             int i = 0;
             while (i < Input.touchCount)
             {
-                if (Input.GetKeyDown(KeyCode.Space))
-                    _rigidBody.velocity = Vector2.up * _speed;
+                _rigidBody.velocity = Vector2.up * _speed;
                 
                 ++i;
             }
